@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_game_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bgn1">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/game_ball_title"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/game_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ImageView
+            android:id="@+id/rl_glass"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/rl_lauch_group"
+            android:scaleType="fitXY"
+            android:src="@drawable/glass"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_lauch_group"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_xiaomai"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiaomai_static"/>
+        </RelativeLayout>
+
+        <com.zuo.ballgame.ballgame.view.MineBallFlowView
+            android:id="@+id/bl_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </com.zuo.ballgame.ballgame.view.MineBallFlowView>
+
+        <RelativeLayout
+            android:id="@+id/rl_line_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            >
+
+            <com.zuo.ballgame.ballgame.view.LineView
+                android:id="@+id/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                />
+        </RelativeLayout>
+
+
+        <com.zuo.ballgame.ballgame.view.CircleProgressView
+            android:id="@+id/cp_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:id="@+id/iv_lauch_ball"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cp_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/iv_glass_bomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_open_music"/>
+
+            <ImageView
+                android:id="@+id/iv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/iv_stop_game"/>
+
+            <ImageView
+                android:id="@+id/iv_over"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_exit_game"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/iv_help"/>
+
+        <TextView
+            android:id="@+id/tv_left_ball_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/rl_lauch_group"
+            android:background="@drawable/circle_num"
+            android:padding="3dp"
+            android:text="15"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/pop_group"/>
+</RelativeLayout>

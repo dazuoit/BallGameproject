@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:visibility="gone"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/pop_help"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/pop_help"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/pop_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/pop_game_stop"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/pop_level_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_level_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_level_fail"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_level_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_level_fail"
+            android:layout_alignRight="@+id/iv_level_fail"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pop_level_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_level_success"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_level_success"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_level_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_level_success"
+            android:layout_alignRight="@+id/iv_level_success"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_game_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_game_over"
+            />
+
+        <TextView
+            android:id="@+id/tv_score_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_game_over"
+            android:layout_alignRight="@+id/iv_game_over"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_exit"
+            />
+
+        <ImageView
+            android:id="@+id/iv_pop_exit_cancle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_exit"
+            android:layout_alignLeft="@+id/iv_exit"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/iv_cancel"/>
+
+        <ImageView
+            android:id="@+id/iv_pop_exit_confirm"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_exit"
+            android:layout_alignRight="@+id/iv_exit"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/iv_confirm"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

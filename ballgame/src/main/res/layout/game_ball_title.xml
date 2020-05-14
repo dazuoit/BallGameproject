@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/game_title"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/game_time"/>
+
+        <TextView
+            android:id="@+id/tv_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="00:00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_current_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="第1关"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_current_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实时肌力值: 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_goal_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标肌力值: 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/game_score"/>
+
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:minWidth="35dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
