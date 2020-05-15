@@ -2,6 +2,9 @@
 ## 原生代码ReycleView 加上surfaceView 实现的打弹珠游戏,无游戏引擎 
 ###  因为需求比较紧急,所有的东西都根据规则的txt文件PC开发脑补出来的,因为导入游戏资源太大,故自己开发,这个游戏因为要和蓝牙设备配合使用,故增加手势触控,及碰小人的腿便可发射弹珠  
 ###  所有类似不想用游戏引擎,实现精准碰撞计算,都可用原生解决,效率也不低,仅供参考  
+![Image](https://github.com/dazuoit/BallGameproject/blob/master/image/1%20(1).jpg)  
+![Image](https://github.com/dazuoit/BallGameproject/blob/master/image/1%20(2).jpg)  
+![Image](https://github.com/dazuoit/BallGameproject/blob/master/image/1%20(3).jpg)
   
 ### 功能 :
 #### 1,每关球数固定,在规定的时间内打完所有的目标球,比最后比得分;
